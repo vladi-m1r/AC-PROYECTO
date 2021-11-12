@@ -25,6 +25,7 @@ footer{
     color: rgb(177, 177, 177);
     text-align: center;
     padding-top: 12px;
+    overflow: hidden;
 }
 
 footer p{
@@ -71,7 +72,7 @@ footer p{
 .options{
     z-index: -1;
     position: relative;
-    left: -70px;
+    left: -90px;
     display: inline-flex;
     flex-direction: column;
 }
@@ -87,4 +88,89 @@ section{
     overflow: hidden;
     background-color: rgb(77, 28, 51);
     z-index: -2;
+}
+
+
+.active{
+    display: none;
+    visibility: hidden;
+}
+
+.game-block{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(26, 26, 26, 0.734);
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+    border: 5px solid rgb(39, 202, 18);
+    transition: 0.5s;
+}
+
+.game-block:hover{
+    background-color: rgb(39, 39, 39);
+}
+
+.game-block-2{
+    width: 325px;
+    height: 400px;
+    background-color: rgba(26, 26, 26, 0.734);
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+}
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    
+}
+
+.main-game{
+    display: flex;
+    margin-left: auto; 
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#game-foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.game-stat{
+    display: flex;
+    margin-right: 60px;
+    align-items: center;
+}
+
+.game-stat img{
+    margin-left: 10px;
+}
+
+.main-icon{
+    width: auto;
+    height: 350px;
 }
